@@ -1,0 +1,88 @@
+@import "../../Global.scss";
+
+.services {
+    margin-top: 20px;
+
+    height: auto !important;
+
+    h1,
+    h3,
+    p {
+        text-align: center;
+        font-family: 'Jura' !important;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: auto;
+
+        .title {
+            font-size: 30px;
+            text-decoration: overline;
+            text-align: center;
+
+            padding: 9px;
+        }
+    }
+}
+
+
+/*---------services-------------*/
+.grid4 {
+    grid-template-columns: repeat(4, 1fr);
+    height: 50vh;
+    place-items: center;
+    text-align: center;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box {
+        background-color: rgba(218, 212, 224, 0.116);
+        padding: 35px;
+        border: 1px solid;
+        border-radius: 24px;
+
+        i {
+            color: var(--primaryColor);
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+.images-list-auto-scroll {
+    height: 109px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 9px;
+
+    white-space: nowrap;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    img {
+        display: inline-block;
+        height: 50px;
+        width: auto;
+        margin: 0 auto;
+
+    }
+}
