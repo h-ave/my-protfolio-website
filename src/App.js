@@ -18,19 +18,23 @@ import "aos/dist/aos.css"
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-    //aos
-    useEffect(() => {
-      AOS.init()
-      AOS.refresh()
-    }, [])
+  //aos
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
+
         <Intro />
+         <About />
         <Services />
-        <About />
+       
+
+
         {/* <Portfolio />
         <Works />
         <Testimonials />

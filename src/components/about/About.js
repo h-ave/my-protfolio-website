@@ -1,72 +1,93 @@
 import React from 'react'
 import Services from '../services/Services';
 import './about.scss';
-import { ProgrammingLanguages } from './about_data';
+import { technolegy } from './about_data';
+import MetaComponent from "../MetaComponent";
 
-
-
+const tags = [
+    " freelancer ",
+    " freelance ", "פרילנסר", " פיתוח תוכנה", " אפיקציות ", " דאטה אנליסט"
+]
 const About = () => {
 
     return (
-        <div className='about' id='about'>
-            {/* <Services /> */}
+        <>
+            <MetaComponent
+                title={"Hila"}
+                description=
+                {
+                    tags.toString() + " " +
+                    technolegy.ProgrammingLanguages.toString() + " " +
+                    technolegy.Infrastructure.toString() + " " +
+                    technolegy.frameworks.toString() + " " +
+                    technolegy.databases.toString()
+                }
 
-            {/* <div className='about-header'>
-                <p>Hello :) my name is </p>
-                <h1>{'< Hila Aveksis />'}</h1>
-                <p>Freelance </p>
-                <h3> Full-Stack Software developer</h3>
-            </div> */}
+            />
 
-
-
-            <div className='skills'>
-                <div>
-                    <h3><i className="bi bi-braces-asterisk"></i>Programming Language:</h3>
-                    <div className='list-box'>
-                        <ul>
-                            {
-                                ProgrammingLanguages.map((lang, i) => (
-                                    <li key={i}>{lang}</li>
-                                ))
-                            }
-                        </ul>
+            <div className='about' id='about'>
+                <div className='skills'>
+                    <h1 className='title'>Technology</h1>
+                    <div>
+                        <h3><i className="bi bi-braces-asterisk"></i>Programming Language:</h3>
+                        <div className='list-box'>
+                            <ul>
+                                {
+                                    technolegy.ProgrammingLanguages.map((lang, i) => (
+                                        <li key={i}>{lang}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3><i className="bi bi-gear-wide-connected"></i>frameworks:</h3>
+                        <div className='list-box'>
+                            <ul>
+                                {
+                                    technolegy.frameworks.map((lang, i) => (
+                                        <li key={i}>{lang}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3><i className="bi bi-cone-striped"></i>Infrastructure:</h3>
+                        <div className='list-box'>
+                            <ul>
+                                {
+                                    technolegy.Infrastructure.map((lang, i) => (
+                                        <li key={i}>{lang}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3><i className="bi bi-database"></i> DB:</h3>
+                        <div className='list-box'>
+                            <ul>
+                                {
+                                    technolegy.databases.map((lang, i) => (
+                                        <li key={i}>{lang}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <h3><i className="bi bi-gear-wide-connected"></i>frameworks:</h3>
-                    <div className='list-box'>
-                        <ul>
-                            <li>.NET CORE</li>
-                            <li>Node.js</li>
-                            <li>Angular 2+</li>
-                            <li>React.js</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <h3><i className="bi bi-cone-striped"></i>Infrastructure:</h3>
-                    <div className='list-box'>
-                        <ul>
-                            <li>Azure Devops</li>
-                            <li>AWS</li>
-                            <li>Heroku</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <h3><i className="bi bi-database"></i> DB:</h3>
-                    <div className='list-box'>
-                        <ul>
-                            <li>MSSQL Server</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
+                <div className='images-list-auto-scroll' data-options="speed: 2400; autoplay: 1000; items: 4;">
+                    <img src="assets/logos/MongoDB_Logo.png" />
+                    <img src="assets/logos/React-icon.png" />
+                    <img src="assets/logos/Microsoft_SQL_server_logo.png" />
+                    <img src="assets/logos/NET_Core_Logo.png" />
+                    <img src="assets/logos/nodejs-logo.png" />
+                    <img src="assets/logos/postgreSQL.svg" />
                 </div>
             </div>
+        </>
 
-        </div>
     )
 }
 

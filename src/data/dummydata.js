@@ -49,7 +49,7 @@ export const services = [
     id: 2,
     icon: <TerminalIcon />,
     title: "Backend Side",
-    desc: "4+ years experience with server-side technologies: .Net Core, Node.js, Nest.js. and in the client : Angular.js and React",
+    desc: "4+ years experience with server-side technologies: .Net Core, Node.js, Nest.js. develop APIs and services",
   },
   {
     id: 3,

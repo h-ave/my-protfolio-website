@@ -3,14 +3,32 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-export const ProgrammingLanguages = [
-"#C",
-"Python",
-"JavaScript | TypeScript",
-"SQL",
-"HTML & CSS/SASS",
-]
-
+export const technolegy = {
+    ProgrammingLanguages: [
+        "#C",
+        "Python",
+        "JavaScript | TypeScript",
+        "SQL",
+        "HTML & CSS/SASS",
+    ],
+    frameworks: [
+        ".NET CORE",
+        "Node.js",
+        "Angular 2+",
+        "React.js",
+    ]
+    ,
+    Infrastructure: [
+        "Azure Devops",
+        "AWS",
+        "Heroku",
+    ],
+    databases: [
+        "MSSQL Server",
+        "PostgreSQL",
+        "MongoDB",
+    ]
+}
 export const SocialLinksItems = [
     {
         name: "whatsapp",
@@ -29,7 +47,7 @@ export const SocialLinksItems = [
     {
         name: "email",
         title: "Email",
-        link: "https://wa.me/972528502568",
+        link: "mailto:hilaveksis.service@gmail.com",
         icon: <AlternateEmailIcon />
     }
     ,

@@ -22,14 +22,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className='images-list-auto-scroll' data-options="speed: 2400; autoplay: 1000; items: 4;">
-          <img src="assets/logos/MongoDB_Logo.png" />
-          <img src="assets/logos/React-icon.png" />
-          <img src="assets/logos/Microsoft_SQL_server_logo.png" />
-          <img src="assets/logos/NET_Core_Logo.png" />
-          <img src="assets/logos/nodejs-logo.png" />
-          <img src="assets/logos/postgreSQL.svg" />
-        </div>
+        
       </section>
     </>
   )
