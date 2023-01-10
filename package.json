@@ -1,6 +1,7 @@
 {
   "name": "portfolio-react",
   "version": "0.1.0",
+  "homepage": "https://h-ave.github.io/my-protfolio-website/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
