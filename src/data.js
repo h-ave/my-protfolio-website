@@ -1,8 +1,8 @@
 
 export const portfolio = {
-    name: "Hila Aveksis",
+    name: "Hila ",
     role: "Software Developer",
-    email: "hila.aveksis@gmail.com",
+    email: "",
     phone: "",
     isPhoneDisplay: false,
     isEmailDisplay: true,
